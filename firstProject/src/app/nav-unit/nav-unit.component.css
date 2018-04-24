@@ -1,0 +1,18 @@
+.nav {
+	font-size: calc(10px + 0.5vw);
+	padding : 5%;
+	background-color: grey;
+	margin : 0%;
+	margin-bottom: 0.5vw;
+	font-weight: calc(10px + 0.5vw);
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 1px;
+	color : black;
+
+}
+
+.anchor{
+	color : black;
+}

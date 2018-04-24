@@ -1,0 +1,9 @@
+html{
+	padding:  0px;
+	margin: 0px;
+	border: 0px;
+}
+
+#navigationBarGlobal{
+	z-index: 100;
+}
