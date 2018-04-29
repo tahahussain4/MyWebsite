@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
   heading  = "AboutMe";
-
+  projectnLink = "/projects";
+  projectLinkName = "projects";
   constructor() { }
 
   ngOnInit() {

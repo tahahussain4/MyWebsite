@@ -25,7 +25,7 @@ import {
       'font-size': 'calc(17px + 0.5vw)'
 
   })),
-    transition('nonhovering <=> hovering', [animate(2000)])
+    transition('nonhovering <=> hovering', [animate(200)])
   ])
 ]
 ,
@@ -33,7 +33,7 @@ import {
 })
 
 export class NavUnitComponent implements OnInit {
-  defaultlinkName = "buttonTest"
+  
   hoveringState = "nonhovering";
 
   @Input() linkName : String;

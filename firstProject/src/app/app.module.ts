@@ -14,12 +14,16 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { WorkExperiencePageComponent } from './work-experience-page/work-experience-page.component';
 import { HeaderPartComponent } from './header-part/header-part.component';
 import { CustomParagraphComponent } from './custom-paragraph/custom-paragraph.component';
-import {Routes} from '@angular/router'
+import {Routes} from '@angular/router';
+import { CustomLinkComponent } from './custom-link/custom-link.component';
+import { ProjectBoxComponent } from './project-box/project-box.component';
+import { TriangleComponent } from './triangle/triangle.component'
 
 const routes: Routes = [
+  { path: '', component: HomePageComponent },
   { path: 'projects', component: ProjectsPageComponent },
-  { path: 'skills', component: HomePageComponent },
-  { path: '', component: HomePageComponent }
+  { path: 'skills', component: SkillsPageComponent },
+  { path: 'workExperience', component: WorkExperiencePageComponent}
 ];
 
 
@@ -34,7 +38,10 @@ const routes: Routes = [
     ProjectsPageComponent,
     WorkExperiencePageComponent,
     HeaderPartComponent,
-    CustomParagraphComponent
+    CustomParagraphComponent,
+    CustomLinkComponent,
+    ProjectBoxComponent,
+    TriangleComponent
   ],
   imports: [
     BrowserModule,

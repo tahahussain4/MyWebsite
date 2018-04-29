@@ -12,14 +12,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
-.paragraph{
-	font-size: calc(10px + 0.8vw);	
-	border-radius: 4px;
-	border-color: rgb(220,220,220);
-	border-style: solid;
-	border-width: 1px;
-	padding : 15%;
-}
+
 
 .align-vertically{
     display: inline-block;
