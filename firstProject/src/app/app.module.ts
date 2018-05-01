@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'projects', component: ProjectsPageComponent },
   { path: 'skills', component: SkillsPageComponent },
-  { path: 'workExperience', component: WorkExperiencePageComponent}
+  { path: 'work', component: WorkExperiencePageComponent}
 ];
 
 

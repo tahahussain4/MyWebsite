@@ -16,10 +16,11 @@
 	border-color: rgb(100,100,100);
 	border-style: solid;
 	border-width: 1px;
-
+	margin-bottom: 1vh;
 }
 
 .project-box{
 	margin-top : 5vh;
-	margin-bottom : 5vh;
+	margin-bottom : 2vh;
+    font-family: 'Gothic A1', sans-serif;
 }

@@ -1,14 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
 
 @Component({
   selector: 'app-project-box',
   templateUrl: './project-box.component.html',
   styleUrls: ['./project-box.component.css']
 })
-export class ProjectBoxComponent implements OnInit {
-	heading = "heading"
+export class ProjectBoxComponent implements OnInit {	
 	hideDetails = true;
-  skills : String[] = ['Java','HTML','CSS']
+  
+  @Input() description;
+  @Input() skills :String[];
+  @Input() heading : String;
+
   constructor() { }
 
   ngOnInit() {

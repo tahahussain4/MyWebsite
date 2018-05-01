@@ -7,8 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
   heading  = "AboutMe";
-  projectnLink = "/projects";
+
+  projectLink = "/projects";
   projectLinkName = "projects";
+
+  skillsLink = "/skills";
+  skillsLinkName = "skills";
+
+  workLink = "/work";
+  workLinkName = 'work experience';
+  
+
+
   constructor() { }
 
   ngOnInit() {

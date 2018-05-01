@@ -5,31 +5,30 @@
 <!-- 			<div class="col-md-2">
 					<app-triangle class="triangle"></app-triangle>
 			</div> -->
-			<div class="col-md-9" style="align-content: left;font-size:3vw">
+			<div class="col-md-11	" style="align-content: left;font-size:3vw">
 				{{heading}}
 				<hr/>
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row" >
 
 			<div *ngIf="hideDetails ; else detailsBox;"></div>
-			<ng-template #detailsBox>
+				<ng-template #detailsBox>
 
-				<div class="col-md-15"></div>
+					<div class="col-md-1"></div>
 
-				<div class= "col-md-6" style ="position : realtive">				
-						
-						This is custom details about the details box						
-				</div>
+					<div class= "col-md-6" style ="position : realtive">				
+							{{description}}					
+					</div>
 
-				<div class="col-md-3 skills">
-						<li *ngFor = 'let skill of skills'>
-							{{skill}}
-						</li>
-				</div>
-				<div class="col-md-1"></div>
-			</ng-template>
+					<div class="col-md-3 skills">
+							<li *ngFor = 'let skill of skills'>
+								{{skill}}
+							</li>
+					</div>
+					<div class="col-md-1"></div>
+				</ng-template>
 		</div>
 
 	</div> 

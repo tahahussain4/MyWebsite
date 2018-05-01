@@ -12,7 +12,7 @@ import {
 @Component({
   selector: 'app-custom-link',
   template: 
-  `
+  `  
   <a routerLink ="{{link}}" routerLinkActive="active" [@hoverState2] = 'hoveringState' (mouseover)="onHover()" (mouseleave)="onLeave()" >{{linkName}}</a>
  
   `,
@@ -20,14 +20,12 @@ import {
   animations: [
   trigger('hoverState2', [
     state('nonhovering', style({
-      'font-size': 'calc(13px + 0.5vw)',
-      'color' : 'black',
+      'font-size': 'calc(10 + 0.5vw)',
       'background-color' : 'transparent'
     })),
     state('hovering',   style({ 
-      'font-size': 'calc(15px + 0.5vw)',
-      'color' : '#228B22',
-      'background-color' : '#90EE90'
+      'font-size': 'calc(10 + 1vw)',
+      'background-color' : '#66ffcc'
   })),
     transition('nonhovering <=> hovering', [animate(200)])
   ])
