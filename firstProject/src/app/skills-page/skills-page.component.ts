@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills-page.component.css']
 })
 export class SkillsPageComponent implements OnInit {
-
+  heading = "Skills"
+  
+  
+  
   constructor() { }
 
   ngOnInit() {
