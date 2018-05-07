@@ -1,36 +1,43 @@
 <div class="project-box">
-	<div (click) = "headingClicked()" class="heading" >
-		<div class="row heading" style="height : 5vh">
-			<div class="col-md-1"></div>
-<!-- 			<div class="col-md-2">
-					<app-triangle class="triangle"></app-triangle>
-			</div> -->
-			<div class="col-md-11	" style="align-content: left;font-size:3vw">
-				{{heading}}
-				<hr/>
-			</div>
-		</div>
-
-		<div class="row" >
-
-			<div *ngIf="hideDetails ; else detailsBox;"></div>
-				<ng-template #detailsBox>
-
-					<div class="col-md-1"></div>
-
-					<div class= "col-md-6" style ="position : realtive">				
-							{{description}}					
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-11">
+			<div (click) = "headingClicked()" class="heading" >
+				<div class="row">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-11" style="align-content: left;font-size:3vw">
+							{{heading}}
+							<hr/>
+						</div>
 					</div>
 
-					<div class="col-md-3 skills">
-							<li *ngFor = 'let skill of skills'>
-								{{skill}}
-							</li>
-					</div>
-					<div class="col-md-1"></div>
-				</ng-template>
-		</div>
+					<div class="row" >
+						<div *ngIf="hideDetails ; else detailsBox;"></div>
+							<ng-template #detailsBox>
 
-	</div> 
-	
+								<div class="col-md-1"></div>
+
+								<div class= "col-md-6" style ="position : realtive">		
+										{{description}}					
+								</div>
+
+								<div class="col-md-4 skills">
+										<div class="ovular" style="background-color: #63605F; color: white; font-weight: bold;	">
+											Skills
+										</div>
+										<div class="row">
+											<div *ngFor = 'let skill of skills'>
+												<div class="col-md-5 ovular">
+													{{skill}}
+												</div>
+											</div>
+										</div>
+								</div>
+							</ng-template>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</div>
 <div>

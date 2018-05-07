@@ -10,17 +10,24 @@
 .heading:hover {
 	background-color: #e6e6e6;
 }
-.skills{
-	font-size: calc(10px + 0.8vw);	
-	border-radius: 4px;
-	border-color: rgb(100,100,100);
-	border-style: solid;
-	border-width: 1px;
-	margin-bottom: 1vh;
+
+.heading{
+	padding-bottom : 3vh;
 }
 
 .project-box{
-	margin-top : 5vh;
-	margin-bottom : 2vh;
     font-family: 'Gothic A1', sans-serif;
+}
+
+.ovular{
+	border-radius: 5px;
+	background-color: #C0C0C0;
+	margin:1vh;
+	padding-left  : 1vw;
+	padding-right: 1vw;
+	padding-bottom:1vh;
+	padding-top: 1vh;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Gothic A1', sans-serif;
 }

@@ -26,6 +26,8 @@ import {
     state('hovering',   style({ 
       'font-size': 'calc(10 + 1vw)',
       'background-color' : '#66ffcc'
+      'border-radius' : '5px';
+      'padding' : '0.2vw'
   })),
     transition('nonhovering <=> hovering', [animate(200)])
   ])
