@@ -1,0 +1,11 @@
+<div class="row">
+	<div class="col-md-4 col-sm-3"></div>
+	<div class="col-md-4 col-md-5 " style="{horizontal-align : centre}">
+		<span *ngFor="let social of socialList">
+			<a href={{social.href}} target="_blank">
+				<img class="socialMediaIcon" src={{social.imgSrc}} alt={{social.alt}}/> 
+			</a>
+		</span>
+	</div>
+	<div class="col-md-4 col-sm-3"></div>
+</div>

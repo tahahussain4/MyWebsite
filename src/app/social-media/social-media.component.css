@@ -1,0 +1,15 @@
+.socialMediaIcon{
+	opacity : 0.5;
+	width : auto;
+	height : 5vh;
+	min-width: auto;
+	min-height: 5vh;
+	margin-top : 10vh;
+	margin-bottom : 10vh;
+	margin-right: 0.5vw;
+	margin-left: 0.5vw;
+}
+
+.socialMediaIcon:hover{
+	opacity : 1;
+}
