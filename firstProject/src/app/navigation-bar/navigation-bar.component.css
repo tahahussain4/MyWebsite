@@ -1,0 +1,11 @@
+html{
+	height : 100%;
+	width : 100%;
+}
+
+.navBar{
+	height : 150vh;
+	background-color: #2D2826;
+	z-index: 1;
+}
+

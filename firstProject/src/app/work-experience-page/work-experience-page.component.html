@@ -1,0 +1,9 @@
+<app-header-part [heading] = 'heading' ></app-header-part>
+
+<div class = "row">
+	<div *ngFor = "let work of workExperiences"
+		<app-project-box [heading]='IntactHeading' [skills]='taxiSkills' [description]='taxiDescription'></app-project-box>
+		<app-project-box [heading]='HSBCHeading' [skills]='vwSkills' [description]='vwDescription' ></app-project-box>
+		<app-project-box [heading]='fbHeading' [skills]='fbSkills' [description]='fbDescription' ></app-project-box>
+	</div>
+</div>

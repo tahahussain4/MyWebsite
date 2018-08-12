@@ -1,0 +1,33 @@
+
+#triangle_right {
+    width: 0;
+    height: 0;
+    border-top: 70px solid transparent;
+    border-left: 140px solid #ff5a00;
+    border-bottom: 70px solid transparent;
+}
+
+.heading:hover {
+	background-color: #e6e6e6;
+}
+
+.heading{
+	padding-bottom : 3vh;
+}
+
+.project-box{
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.ovular{
+	border-radius: 5px;
+	background-color: #C0C0C0;
+	margin:1vh;
+	padding-left  : 1vw;
+	padding-right: 1vw;
+	padding-bottom:1vh;
+	padding-top: 1vh;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Gothic A1', sans-serif;
+}
