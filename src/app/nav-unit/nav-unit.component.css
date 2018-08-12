@@ -1,16 +1,21 @@
 .nav {
 	font-size: calc(10px + 0.5vw);
 	padding : 5%;
-	background-color: grey;
+	background-color: #F5F5F5;
 	margin : 0%;
 	margin-bottom: 0.5vw;
+	margin-right : 0.5vw;
+
 	font-weight: calc(10px + 0.5vw);
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	text-align: center;
 	vertical-align: middle;
 	border-radius: 1px;
 	color : black;
-
+	border-radius: 15px;
+	border-color: #665B4F;
+	border :  20px;
+	float : left;
 }
 
 .anchor{

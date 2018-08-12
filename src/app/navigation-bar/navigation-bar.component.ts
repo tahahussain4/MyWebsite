@@ -24,7 +24,7 @@ export class NavigationBarComponent implements OnInit {
     new LinkObject("Home","/"),
     new LinkObject("Projects","/projects"), 
     new LinkObject("Skills","/skills"),
-    new LinkObject("Work Experience","/work")
+    new LinkObject("Work","/work")
     ]
   	this.animationClass="";
   }

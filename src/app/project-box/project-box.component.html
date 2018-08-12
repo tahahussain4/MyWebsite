@@ -1,14 +1,17 @@
 <div class="project-box">
 	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-11">
+		<div class="col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-md-10 col-sm-10 col-sm-10">
 			<div (click) = "headingClicked()" class="heading" >
-				<div class="row">
 					<div class="row">
 						<div class="col-md-1"></div>
 						<div class="col-md-11" style="align-content: left;font-size:3vw">
 							{{heading}}
-							<hr/>
+							<div class="row">
+								<div class="col-md-7">
+									<hr/>
+								</div>
+							</div>
 						</div>
 					</div>
 
@@ -36,7 +39,6 @@
 								</div>
 							</ng-template>
 					</div>
-				</div>
 			</div> 
 		</div>
 	</div>

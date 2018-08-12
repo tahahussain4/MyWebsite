@@ -1,18 +1,12 @@
-
-#triangle_right {
-    width: 0;
-    height: 0;
-    border-top: 70px solid transparent;
-    border-left: 140px solid #ff5a00;
-    border-bottom: 70px solid transparent;
-}
-
 .heading:hover {
 	background-color: #e6e6e6;
 }
 
 .heading{
+	padding-top  : 3vh;
 	padding-bottom : 3vh;
+	padding-right: 3vw;
+	padding-left: 3vw;
 	border-radius: 10px;
 }
 
@@ -22,7 +16,7 @@
 
 .ovular{
 	border-radius: 30px;
-	background-color: #C0C0C0;
+	background-color: #F5F5F5;
 	margin:1vh;	
 	padding-left  : 1vw;
 	padding-right: 1vw;
