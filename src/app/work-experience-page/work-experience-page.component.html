@@ -8,10 +8,10 @@
 					<div class="col-md-10 col-sm-10 headingColumn">
 						<div style="font-size: calc(10px + 1vw);font-weight: bold">
 							<div class="row" >
-								<div class="col-md-5 col-sm-5">
+								<div class="col-md-5 col-sm-5 col-xs-5">
 									{{work.workName}}
 								</div>
-								<div class="col-md-7 col-sm-7" style="font-size: 15px">
+								<div class="col-md-7 col-sm-7 col-xs-7" style="font-size: 15px">
 									<div class="row">
 										{{work.yearFrom}} to
 									</div>
@@ -21,10 +21,10 @@
 								</div>
 							</div>
 						</div>
-						<div style="font-style: italic;font-size:calc(5px + 1vw);"> {{work.role}}</div>
-						<div>{{work.workAddress.street}}</div>
-						<div>{{work.workAddress.city}},{{work.workAddress.province}},{{work.workAddress.country}}</div>
-						<div>{{work.workAddress.poBox}}</div>
+						<div style="font-style: italic;font-size:calc(10px + 1vw);"> {{work.role}}</div>
+						<div style="font-weight: bold">{{work.workAddress.street}}</div>
+						<div style="font-weight: bold">{{work.workAddress.city}},{{work.workAddress.province}},{{work.workAddress.country}}</div>
+						<div style="font-weight: bold">{{work.workAddress.poBox}}</div>
 					</div>
 				</div>
 			</div>
