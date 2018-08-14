@@ -4,4 +4,6 @@
 	font-size: calc(30px + 5vw	);
 	text-align : center;
 	z-index : -1;
+	background-color: #efefd7;
+	color:  #937842;
 }
