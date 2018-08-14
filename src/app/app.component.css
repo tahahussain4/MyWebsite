@@ -6,9 +6,14 @@ html{
 
 }
 
-body{
+p{
 	height :100%;
+	color : #937842;
 }
+
+/*div{
+	color: #937842;
+}*/
 
 #navigationBarGlobal{
 	z-index: 100;
