@@ -11,19 +11,15 @@ import {
 @Component({
   selector: 'app-nav-unit',
   template: `
-  <div #navBox class="nav" [@hoverState] = 'hoveringState' (mouseover)="onHover()" (mouseleave)="onLeave()">
-	  <a class="anchor" routerLink ="{{link}}" routerLinkActive="active">{{linkName}}</a>
+  <div #navBox  [@hoverState] = 'hoveringState' (mouseover)="onHover()" (mouseleave)="onLeave()">
+	  <a class="nav" routerLink ="{{link}}" routerLinkActive="active">{{linkName}}</a>
   </div>
 `,  animations: [
   trigger('hoverState', [
     state('nonhovering', style({
-
-      'font-size': 'calc(13px + 0.5vw)'
+      'font-size': 'calc(13px + 0.5vw`)'
     })),
     state('hovering',   style({ 
-
-      'font-size': 'calc(14px + 0.5vw)'
-
   })),
     transition('nonhovering <=> hovering', [animate(200)])
   ])

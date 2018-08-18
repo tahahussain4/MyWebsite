@@ -30,18 +30,20 @@
 			</div>
 
 			<!-- Descirption -->
-			<div class= "col-md-4 col-sm-4">
-				{{work.workDescription}}
+			<div [innerHTML]="work.workDescription" class= "col-md-4 col-sm-4">
+				
 			</div>
 
 			<!-- Skills -->
 			<div class= "col-md-4 col-sm-4">
-				<div class="ovular" style="background-color: #63605F; color: white; font-weight: bold;	">
-					Skills
+				<div class="row">
+					<div class="col-md-11 col-sm-11 col-xs-11 ovular" style="background-color: #63605F; color: white; font-weight: bold;	">
+						Skills
+					</div>
 				</div>
 				<div class="row">
 					<div *ngFor = 'let skill of work.skillsDeveloped'>
-						<div class="col-md-5 col-sm-5 ovular">
+						<div class="col-md-5 col-sm-5 col-xs-5 ovular">
 							{{skill}}
 						</div>
 					</div>

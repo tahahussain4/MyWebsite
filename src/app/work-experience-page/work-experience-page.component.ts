@@ -9,30 +9,50 @@ import { Component, OnInit } from '@angular/core';
 
 export class WorkExperiencePageComponent implements OnInit {
   heading = "Work Experience";
-  intactDescription =`I started work at intact insuarnce as part of my FDM contract in the ECM team 
-  which manages two main application used by the company as well as ECM (Enterprise content management)  itself.
-  Through production support I vastly improved my coding skills as well as code comprehension. I was aquainted with different technologies 
-  which were mainly based on Spring , Spring flow and Java Server Faces being two new ones I learnt. 
-  It helped me build my team inter-team skills as I was constantly coordinating with different groups to help provide users 
-  with the best service that our application had to offer thorugh coordinating releases and helping with process . 
-  In addiiton to that I got opptunities to work in two projects
-  1) Data Destruction Project : Involved learning and working with IBM's ECM APIs to retrieve data,
-  generate excel sheets and destroying the data in those reveiwed sheets. 
-  2) Data Migration projects : Involved learning and writing DOS scritps to automate the ingesting data process`;
+  intactDescription =`At Intact I work in the ECM team as a consultant. ECM is the Enterprise content management system provided
+  by IBM to manage documents of different types as well as the freedom to control mutiple storage and administrative options using 
+  provided applicaitons or scripts.
+  <br/>
+  <br/>
+  <p>
+  My responsiblities include :
+     <ul>
+       <li>Supporting applications managed by our team</li>
+       <li>Development work on projects and change requests</li>
+       <li>Aiding in solutions design</li>
+       <li>Assiting in improving the team and platform</li>
+       <li>  Coordinating with teams on inter-system issues</li>
+     </ul>  
+   </p>
+  `
 
 
-      
+  hsbcDescription = `At HSBC I worked as a software developer in the SE department.I worked exclusively on AS400 systems
+  provided by IBM and coded in the RPG. The main focus of my work was the term deposit project. 
+      <br/>
+      <br/>
+      <p>
+        My responsibilites included :
+        <ul>
+          <li>Developement work according to comapny standards</li>
+          <li>Documentation of solutions</li>
+          <li>Helping in the the SDLC lifecycle</li>
+          <li>Support during QA and UAT phases</li>
+        </ul> 
+      </p>
+  ` ;
 
-  hsbcDescription = `I started at HSBC as part of my FDM contract . I worked on their term deposit project which 
-  focused on enhacing the exisitng applicaitons. The focus and motivation of the project was centralizing code that was used
-  for mutiple products to improve code maintainlibity as well as provide front end users a more central interface to manipulate 
-  the products. I learned to work on the AS400 in this short time and learned to code in RPG , a language specific to this 
-  platform. It was a continuous learning process in this role which I thoroughly enjoyed and had a successful end to the project`;
-
-  MARCDescription = `MARC (McMaster automotive resource centre) was a coop expereince that I took under my professor at the time.
-  The position invloved helping grad students with their research in topics. I was given the reposibility of setting up the test
-  becnh and writing C code to simulate the process that they were trying to research . The main aim was to simulate the CAN network used
-  in cars `
+  MARCDescription = `MARC (McMaster automotive resource centre) was a coop expereince that I took under my professor at the time. 
+  The focus of the research was CAN networks used in the automotive industry.
+  I worked on a number of things including: 
+    <p>
+        <ul>
+          <li>Designing and setting up test beds for expandibility</li>
+          <li>Coding in C to mimik real world situations</li>
+          <li>Setting up effective data acquisition and post processing methods</li>
+        </ul> 
+     </p>
+   `
 
   intactExperience = new WorkExperienceObject(
   		"Intact",

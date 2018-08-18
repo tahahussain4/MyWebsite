@@ -11,14 +11,18 @@
 	text-align: center;
 	vertical-align: middle;
 	border-radius: 1px;
-	color : black;
+	
 	border-radius: 15px;
 	border-color: #665B4F;
 	border :  20px;
 	float : left;
+	color : #937842;
 	
 }
 
-.anchor{
-	color : #937842;
+a:hover {
+	background-color: #cec0a3;
+	font-size: calc(14px + 0.5vw);
+	color : #fffff9;
+	text-decoration: none;
 }
