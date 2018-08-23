@@ -20,3 +20,10 @@
 .socialMediaBar{
 	background-color: #efefd7;
 }
+
+.contactinfo{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:  #937842;
+	text-align: center;
+	padding-bottom: 3vh;
+}

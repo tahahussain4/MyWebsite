@@ -48,7 +48,7 @@ export class WorkExperiencePageComponent implements OnInit {
     <p>
         <ul>
           <li>Designing and setting up test beds for expandibility</li>
-          <li>Coding in C to mimik real world situations</li>
+          <li>Coding in C to model CAN networks</li>
           <li>Setting up effective data acquisition and post processing methods</li>
         </ul> 
      </p>
