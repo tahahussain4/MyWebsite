@@ -23,5 +23,9 @@ body{
 
 .profileImage{
 	width : 100%;
-
+	border-radius: 50%;
+	overflow : hidder;
+	height : 60vh;
+	width : auto ;
+	margin-bottom: 3vh;
 }

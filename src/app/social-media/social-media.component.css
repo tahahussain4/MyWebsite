@@ -18,13 +18,15 @@
 }
 
 .socialMediaBar{
+	margin-top: 5vh;
 	background-color: #efefd7;
 }
 
 .contactinfo{
+	margin-top :5vh;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color:  #937842;
-	text-align: center;
+	
 	padding-bottom: 3vh;
 	background-color: 
 }
