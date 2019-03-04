@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+declare var colorUtils : any;
+
+import { Component, OnInit,Input } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-home-page',
@@ -8,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomePageComponent implements OnInit {
   heading  = "AboutMe";
 
-  projectLink = "/projects";
+  projectLink = "/projects"; 
   projectLinkName = "projects";
 
   skillsLink = "/skills";
@@ -16,12 +20,21 @@ export class HomePageComponent implements OnInit {
 
   workLink = "/work";
   workLinkName = 'work experience';
-  
+  colorPallette ={
+    lightestColor : "",
+    lighterColor : "",
+    mediumColor : "",
+    darkerColor : "",
+    darkestColor : ""
+
+  }
 
 
+  @Input() color : string;
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

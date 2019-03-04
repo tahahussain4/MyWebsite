@@ -1,7 +1,7 @@
 .nav {
 	font-size: calc(10px + 0.5vw);
 	padding : 5%;
-	background-color: #fffff9;
+	/*background-color: #fffff9;*/
 	margin : 0%;
 	margin-bottom: 0.5vw;
 	margin-right : 0.5vw;
@@ -16,13 +16,28 @@
 	border-color: #665B4F;
 	border :  20px;
 	float : left;
-	color : #937842;
-	
+	display:table-cell;
+	/*color : #937842;*/	
 }
 
-a:hover {
+/*a:hover {
 	background-color: #cec0a3;
 	font-size: calc(14px + 0.5vw);
 	color : #fffff9;
 	text-decoration: none;
+}*/
+
+.navHolder{
+	width : 10vw;
+	height: 10vh;
+	/*display: inline-block;*/
+	display:table-cell;    /*Add this*/
+	float:left;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 15px;
+	border :  20px;
+	margin-bottom: 0.5vw;
+	margin-right : 0.5vw;
+
 }

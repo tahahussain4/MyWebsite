@@ -1,12 +1,13 @@
 
-<app-header-part [heading] = 'heading' ></app-header-part>
-	
+
+<app-header-part [heading] = 'heading'></app-header-part>
+<script src="../utils/colorUtils.js"></script>
 <div class = "row">
 	<div class = "col-md-6 col-sm-6 col-xs-12 align-vertically">
 		<img class = "profileImage" src="./assets/taha_image.JPG" alt="Happy me"/> 
 	</div>
 
-	<div class = "col-md-5 col-sm-5 align-vertically ">
+	<div class = "col-md-5 col-sm-5 align-vertically " style="color:{{colorPallette.darkestColor}}">
 			<p class="paragraphGlobal">
 				Hi!
 				I am a software developer with a passion for technology. I come from a mechatronics background where I learned about multiple disciplines with a focus on software. During my university years I worked on several <app-custom-link [link]='projectLink' [linkName]='projectLinkName'></app-custom-link>  and scripts over various languages including Python,Java,C,C++ and had an affinity towards coding in general among the three disciplines. 

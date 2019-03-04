@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input,ViewChild,AfterViewInit} from '@angular/core';
 import {Observable} from 'rxjs/Rx';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+declare var colorUtils : any;
+// import { NavUnitComponent } from './nav-unit/nav-unit.component';
 @Component({
   selector: 'app-navigation-bar',
   templateUrl: './navigation-bar.component.html',
@@ -14,6 +15,8 @@ export class NavigationBarComponent implements OnInit {
   navigationStyle = {'width' : '20%'};
   links : LinkObject[];
   ticks=0;
+
+
 
    ngOnInit(){
 
