@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Project} from '../model/Project';
+import { ProjectService } from '../services/project.service';
 @Component({
   selector: 'app-projects-page',
   templateUrl: './projects-page.component.html',
   styleUrls: ['./projects-page.component.css']
 })
 export class ProjectsPageComponent implements OnInit {
-  
+  pArray : Project[];
+
   heading = "Projects"
 	  
 	taxiHeading = "Car Booking App"
@@ -31,9 +33,11 @@ export class ProjectsPageComponent implements OnInit {
 	fbSkills = ['C++','Arduino','Engineering Design']
 	fbDescription = "Foosball Machine be awesome!!!"
 
-  constructor() { }
+  constructor(private projectService : ProjectService) { }
 
   ngOnInit() {
+  	this.pArray = this.projectService.getProjects();
+  	console.log(this.pArray)
   }
 
 }

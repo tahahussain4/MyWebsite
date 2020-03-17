@@ -19,7 +19,7 @@ import { CustomLinkComponent } from './custom-link/custom-link.component';
 import { ProjectBoxComponent } from './project-box/project-box.component';
 import { TriangleComponent } from './triangle/triangle.component';
 import { SocialMediaComponent } from './social-media/social-media.component'
-
+import {ProjectService} from './services/project.service';
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'projects', component: ProjectsPageComponent },
@@ -53,7 +53,7 @@ const routes: Routes = [
       routes
     )
   ],
-  providers: [GetUsersService],
+  providers: [GetUsersService,ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
