@@ -20,6 +20,8 @@ import { ProjectBoxComponent } from './project-box/project-box.component';
 import { TriangleComponent } from './triangle/triangle.component';
 import { SocialMediaComponent } from './social-media/social-media.component'
 import {ProjectService} from './services/project.service';
+import { HttpClientModule } from '@angular/common/http'; 
+
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'projects', component: ProjectsPageComponent },
@@ -49,6 +51,7 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
+    HttpClientModule,
     RouterModule.forRoot(
       routes
     )

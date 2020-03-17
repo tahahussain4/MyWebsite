@@ -7,7 +7,7 @@ import { ProjectService } from '../services/project.service';
   styleUrls: ['./projects-page.component.css']
 })
 export class ProjectsPageComponent implements OnInit {
-  pArray : Project[];
+  pArray :	 Project[]=[];
 
   heading = "Projects"
 	  
@@ -33,11 +33,25 @@ export class ProjectsPageComponent implements OnInit {
 	fbSkills = ['C++','Arduino','Engineering Design']
 	fbDescription = "Foosball Machine be awesome!!!"
 
-  constructor(private projectService : ProjectService) { }
+  constructor(private projectService : ProjectService) { 
+    	const observable = this.projectService.getProjects();
+
+  		observable.subscribe(
+		  	(data) => { 
+		  		let dataArray = data as any[]
+		  		dataArray.forEach((item) => {
+		 
+		  			this.pArray.push(item);
+		  		})
+		  		console.log("parray"+ this.pArray)
+		  		console.log(this.pArray[0].name)
+	   		}
+		);
+}
 
   ngOnInit() {
-  	this.pArray = this.projectService.getProjects();
-  	console.log(this.pArray)
+
+  	
   }
 
 }
