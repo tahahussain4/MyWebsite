@@ -7,7 +7,7 @@
 			
 			<ul *ngFor="let project of pArray">
    							
-   			<app-project-box [heading]="{{project.name}}" [skills]="{{project.skills}}" [description]="{{project.description}}"></app-project-box>
+   			<app-project-box [heading]="project.name" [skills]="project.skills" [description]="project.description"></app-project-box>
 
 			</ul>
 		</div>
