@@ -45,6 +45,6 @@ p{
 	font-family: 'Gothic A1', sans-serif;
 }
 
-.navigationRow{
-	/*background-color: #efefd7;*/
+#noMargins{
+	padding: 0px	;
 }

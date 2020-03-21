@@ -9,13 +9,11 @@ export class ProjectService {
 	getAllProjectUrl : string ="/getAllProjects";
 
   constructor(private httpClient :HttpClient ) { 
-
   }
 
   getProjects() : Observable<Object> {
-
   	const observer  = this.httpClient.get(this.restAPIPath + this.getAllProjectUrl,{ 
-  		headers : {'Origin': 'http://192.168.2.133/4200'}})
+  		headers : {'Origin': this.restAPIPath}})
   	return observer;
   }
 }

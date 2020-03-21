@@ -1,43 +1,16 @@
-.nav {
+.navUnit {
 	font-size: calc(10px + 0.5vw);
-	padding : 5%;
-	/*background-color: #fffff9;*/
-	margin : 0%;
-	margin-bottom: 0.5vw;
-	margin-right : 0.5vw;
 
 	font-weight: calc(10px + 0.5vw);
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	text-align: center;
-	vertical-align: middle;
-
+	/*vertical-align: middle;*/
 	
 	border-radius: 5px;
-	border-color: #665B4F;
+	border-color: #665BCC;
 	border :  20px;
-	float : left;
-	display:table-cell;
-	/*color : #937842;*/	
+
+	height : 10vh;
+	padding : 3vw;	
 }
 
-/*a:hover {
-	background-color: #cec0a3;
-	font-size: calc(14px + 0.5vw);
-	color : #fffff9;
-	text-decoration: none;
-}*/
-
-.navHolder{
-	width : 10vw;
-	height: 10vh;
-	/*display: inline-block;*/
-	display:table-cell;    /*Add this*/
-	float:left;
-	text-align: center;
-	vertical-align: middle;
-	border-radius: 15px;
-	border :  20px;
-	margin-bottom: 0.5vw;
-	margin-right : 0.5vw;
-
-}

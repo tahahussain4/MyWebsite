@@ -27,7 +27,7 @@ export class AppComponent {
       let backgroundColor = colorPalleteArray[4]
 
       let formedStyle = "color:"+fontColor+";background-color:"+backgroundColor ;
-      document.getElementById('navigation').setAttribute("style",formedStyle); 
+
   }
 
   constructor(_getUsersService : GetUsersService){

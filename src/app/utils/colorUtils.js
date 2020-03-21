@@ -11,6 +11,7 @@ function getComponentsAsArray(hexColor){
 }
 
 function getOffsettedValue(baseTenColor,offset,operationCallback){
+  console.log(operationCallback)
 	var offsettedValue = operationCallback(baseTenColor,offset);
   if(offsettedValue < 0){
   	offsettedValue = 0;
@@ -29,8 +30,8 @@ function generateColorArray(initialHexColor, size,adjustmentIndex,operation){
   var greenBaseTen = parseInt(rgbArray[2],16);
   for(var i=0;i<size;i++){  	
    		redBaseTen = getOffsettedValue(redBaseTen,adjustmentIndex,operation);
-		blueBaseTen = getOffsettedValue(blueBaseTen,adjustmentIndex,operation);
-		greenBaseTen = getOffsettedValue(greenBaseTen,adjustmentIndex,operation);
+		  blueBaseTen = getOffsettedValue(blueBaseTen,adjustmentIndex,operation);
+		  greenBaseTen = getOffsettedValue(greenBaseTen,adjustmentIndex,operation);
   		returnRGBArray[i] = "#"+getBase16Color(redBaseTen)+getBase16Color(blueBaseTen)+getBase16Color(greenBaseTen);
   }
   return returnRGBArray;
@@ -64,11 +65,14 @@ function getRandomColorPallette(initialHexColor,size,adjustmentIndex,operation){
 
 }
 
-var defaultColorPallet;
+var defaultColorPallet;   //global default pallette generated once
 
 function getDefaultColorPalette(){
   if(typeof(defaultColorPallet) === 'undefined'){
-    defaultColorPallet = getRandomColorPallette(autoGenerateLightColor(),10,30,this.add)
+    var sizeOfPallete = 10;
+    var offsetBetweenEachShade = 30;
+    var callbackToApplyOffset = this.add; 
+    defaultColorPallet = getRandomColorPallette(autoGenerateLightColor(),sizeOfPallete,offsetBetweenEachShade,callbackToApplyOffset);
   }
   console.log("default color pallette " +defaultColorPallet)
   return defaultColorPallet;

@@ -1,6 +1,7 @@
 import { Component, OnInit ,Input,ViewChild,AfterViewInit} from '@angular/core';
 import {Observable} from 'rxjs/Rx';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { navigationBackground } from '../constants/globalSettings'
 declare var colorUtils : any;
 // import { NavUnitComponent } from './nav-unit/nav-unit.component';
 @Component({
@@ -16,13 +17,15 @@ export class NavigationBarComponent implements OnInit {
   links : LinkObject[];
   ticks=0;
 
-
-
    ngOnInit(){
 
+     var hostElements = document.getElementsByClassName(":host");
+     if(hostElements.length > 0 ){
+       (hostElements[0] as HTMLElement).style.backgroundColor = navigationBackground;
+     }
    } 
 
-  constructor() { 
+ constructor() { 
   	this.links = [
     new LinkObject("Home","/"),
     new LinkObject("Projects","/projects"), 
