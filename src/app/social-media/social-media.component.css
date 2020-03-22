@@ -2,15 +2,22 @@
 	opacity : 0.5;
 	width : auto;
 	height : 5vh;
-	min-width: auto;
+
 	min-height: 6vh;
 	margin-top : 5vh;
-	margin-bottom : 5vh;
+/*	margin-bottom : 5vh;
 	margin-right: 2vw;
-	margin-left: 0.5vw;
+	margin-left: 0.5vw;*/
 	text-decoration:none;
 
 
+}
+.socialMediaIconContainer{
+	text-align: center;
+}
+
+.socialMediaSpan{
+	display: inline-block;
 }
 
 .socialMediaIcon:hover{
@@ -19,7 +26,6 @@
 
 .socialMediaBar{
 	margin-top: 2vh;
-	background-color: #efefd7;
 }
 
 .contactinfo{

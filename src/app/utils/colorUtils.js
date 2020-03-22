@@ -11,7 +11,6 @@ function getComponentsAsArray(hexColor){
 }
 
 function getOffsettedValue(baseTenColor,offset,operationCallback){
-  console.log(operationCallback)
 	var offsettedValue = operationCallback(baseTenColor,offset);
   if(offsettedValue < 0){
   	offsettedValue = 0;

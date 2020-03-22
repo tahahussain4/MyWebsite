@@ -6,21 +6,13 @@ html{
 
 }
 
+body{
+
+}	
+
 p{
 	height :100%;
 	color : #937842;
-}
-
-/*div{
-	color: #937842;
-}*/
-
-#navigationBarGlobal{
-	z-index: 100;
-	height : 100%;
-	position : absolute;
-	top : 0%;
-	display :inline-block
 }
 
 .paragraphGlobal{
@@ -45,6 +37,19 @@ p{
 	font-family: 'Gothic A1', sans-serif;
 }
 
+#noMarginsAbsolute{
+	position: absolute;
+	padding: 0px;
+	width : 100%;
+	height : 100%;
+}
+
 #noMargins{
 	padding: 0px	;
 }
+
+#fixed {
+
+	background-color: #efefd7;
+}
+

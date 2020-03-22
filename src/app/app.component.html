@@ -1,5 +1,3 @@
-		<!--The content below is only a placeholder and can be replaced.-->
-
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -10,15 +8,19 @@
  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
 
-<div class ="row">
 
-	<div id="noMargins" class="col-md-4 col-lg-4 ">
-		<app-navigation-bar ></app-navigation-bar>
+
+<div id="fixed" class ="row">
+	<div id="fixed" class="col-md-2 col-lg-2">
+			<app-navigation-bar ></app-navigation-bar>
 	</div>
-
-
-	<div id="noMargins" class="col-md-8 col-lg-8 noMargins">
-		<router-outlet></router-outlet>
-		<app-social-media></app-social-media>
-	</div>	
+	
+	<div id="noMargins" class="col-md-10 col-lg-10">
+		<div class="row" style = 'text-align: center;background-color: white'>
+			<router-outlet ></router-outlet>
+		</div>
+		<div class="row" style=	"text-align:center;">
+			<app-social-media></app-social-media>
+		</div>
+	</div>
 <div>

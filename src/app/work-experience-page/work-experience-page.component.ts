@@ -89,6 +89,20 @@ export class WorkExperiencePageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.workExperiences.forEach(function(workExperience){
+      console.log(workExperience.skillsDeveloped.sort(function(skill1:string,skill2:string){
+        
+        if(skill1.length > skill2.length){
+          console.log(skill1 + " is greater than "+skill2)
+          return Number(-1);
+        } else(skill1.length < skill2.length){
+          return Number(1)
+        }
+        return Number(0);
+      }));
+      console.log(workExperience.skillsDeveloped);
+    });
+
   }
 
 }
