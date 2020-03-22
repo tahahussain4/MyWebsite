@@ -4,14 +4,13 @@
 	height : 5vh;
 
 	min-height: 6vh;
-	margin-top : 5vh;
+	margin : 2vh;	
 /*	margin-bottom : 5vh;
 	margin-right: 2vw;
 	margin-left: 0.5vw;*/
 	text-decoration:none;
-
-
 }
+
 .socialMediaIconContainer{
 	text-align: center;
 	width : 100%;
@@ -30,10 +29,9 @@
 }
 
 .contactinfo{
-	margin-top :5vh;
+	margin:2vh;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	color:  #937842;
-	
+
 	padding-bottom: 3vh;
-	background-color: 
+	font-size: calc(10px + 1vw);
 }
