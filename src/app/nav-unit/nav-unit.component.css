@@ -1,8 +1,8 @@
 .navUnit {
-	font-size: calc(10px + 0.5vw);
+	font-size: calc(15px + 1vw);
 
-	font-weight: calc(10px + 0.5vw);
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: calc(15px + 1vw);
+	font-family: "Baloo Chettan 2", "Lucida Grande", sans-serif;
 	text-align: center;
 	/*vertical-align: middle;*/
 	
@@ -12,7 +12,10 @@
 
 	height : 10vh;
 	padding : 3vw;	
+	width: 100%;
+	display: table;
+}
 
-	vertical-align: middle;
+a {
 }
 

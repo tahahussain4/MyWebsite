@@ -15,7 +15,7 @@ declare var colorUtils : any;
   selector: 'app-nav-unit',
   template: `
   <div class="navUnit" [id]='navId' [@hoverState] = 'hoveringState' (mouseover)="onHover()" (mouseleave)="onLeave()">
-	  <a routerLink ="{{link}}" routerLinkActive="active">{{linkName}}</a>
+	  <a [id]='navLinkId' routerLink ="{{link}}" routerLinkActive="active">{{linkName}}</a>
   </div>
 `,  animations: [
   trigger('hoverState', [
@@ -38,6 +38,7 @@ export class NavUnitComponent implements OnInit {
   hoveringState = "nonhovering";
 
   navId : string;
+  navLinkId : string;
   originalBackgroundColor : string;
 
   @Input() linkName : String;
@@ -47,27 +48,35 @@ export class NavUnitComponent implements OnInit {
    }
 
    ngOnInit(){
-         this.navId = "navLink" + this.id;
-         console.log()
+         this.navId = "nav" + this.id;
+         this.navLinkId = "navLink" + this.id;
    }
 
    ngAfterViewInit(){
-     var element = document.getElementById(this.navId);
-         this.originalBackgroundColor = navigationBackground;
-         console.log(this.originalBackgroundColor + " original background color INIT" +  document.getElementById(this.navId)  )
-         this.colorPalleteArray= colorUtils.getRandomColorPallette(this.originalBackgroundColor,5,30,colorUtils.subtract); //get darker tones
-   }
+         this.originalBackgroundColor = navigationBackground;       
+         this.colorPalleteArray= colorUtils.getRandomColorPallette(this.originalBackgroundColor,10,30,colorUtils.subtract); //get darker tones
+         
+         var element =   document.getElementById(this.navLinkId);
+         element.style.color = this.colorPalleteArray[5]
+    }
 
   onHover(){
     console.log("hover")
     console.log("nav bar pallete " + this.colorPalleteArray)
     console.log(this.originalBackgroundColor + " original background color")
     document.getElementById(this.navId).style.backgroundColor = this.colorPalleteArray[2];
+
+
+   var element =   document.getElementById(this.navLinkId);
+   element.style.color = this.colorPalleteArray[0]
   }
 
   onLeave(){
     console.log("leave")
     document.getElementById(this.navId).style.backgroundColor = this.originalBackgroundColor ;
+
+   var element =   document.getElementById(this.navLinkId);
+   element.style.color = this.colorPalleteArray[5]
 
   }
 

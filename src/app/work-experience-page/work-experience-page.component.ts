@@ -82,7 +82,7 @@ export class WorkExperiencePageComponent implements OnInit {
   		"2015 September",
   		new Address("270 Lonwood Rd. South","Hamilton","ON","Canada","L8P 0A6"),
   		this.MARCDescription,
-  		["C","MicrControllers","CAN Bus","Canoe testing"]
+  		["C","Micro Controllers","CAN Bus","Canoe testing"]
   	)
   workExperiences = [this.intactExperience,this.hsbcExperience,this.marcExperience];
 
@@ -94,8 +94,8 @@ export class WorkExperiencePageComponent implements OnInit {
         
         if(skill1.length > skill2.length){
           console.log(skill1 + " is greater than "+skill2)
-          return Number(-1);
-        } else(skill1.length < skill2.length){
+          return Number(-1)
+        } else if (skill1.length < skill2.length) {
           return Number(1)
         }
         return Number(0);

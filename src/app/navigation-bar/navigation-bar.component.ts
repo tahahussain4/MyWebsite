@@ -1,4 +1,4 @@
-import { Component, OnInit ,Input,ViewChild,AfterViewInit} from '@angular/core';
+ import { Component, OnInit ,Input,ViewChild,AfterViewInit} from '@angular/core';
 import {Observable} from 'rxjs/Rx';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { navigationBackground } from '../constants/globalSettings'
