@@ -3,22 +3,21 @@ import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router'
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { NavigationBarComponent } from './pageComponents/navigation-bar/navigation-bar.component';
 import { LoginComponent } from './login/login.component';
-import {GetUsersService} from './get-users.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavUnitComponent } from './nav-unit/nav-unit.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { SkillsPageComponent } from './skills-page/skills-page.component';
-import { ProjectsPageComponent } from './projects-page/projects-page.component';
-import { WorkExperiencePageComponent } from './work-experience-page/work-experience-page.component';
-import { HeaderPartComponent } from './header-part/header-part.component';
-import { CustomParagraphComponent } from './custom-paragraph/custom-paragraph.component';
+import { NavUnitComponent } from './pageComponents/nav-unit/nav-unit.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { SkillsPageComponent } from './pages/skills-page/skills-page.component';
+import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
+import { WorkExperiencePageComponent } from './pages/work-experience-page/work-experience-page.component';
+import { HeaderPartComponent } from './pageComponents/header-part/header-part.component';
+import { CustomParagraphComponent } from './htmlComponentsWrappers/custom-paragraph/custom-paragraph.component';
 import {Routes} from '@angular/router';
-import { CustomLinkComponent } from './custom-link/custom-link.component';
-import { ProjectBoxComponent } from './project-box/project-box.component';
-import { TriangleComponent } from './triangle/triangle.component';
-import { SocialMediaComponent } from './social-media/social-media.component'
+import { CustomLinkComponent } from './htmlComponentsWrappers/custom-link/custom-link.component';
+import { ProjectBoxComponent } from './pageComponents/project-box/project-box.component';
+import { TriangleComponent } from './pageComponents/triangle/triangle.component';
+import { SocialMediaComponent } from './pageComponents/social-media/social-media.component'
 import {ProjectService} from './services/project.service';
 import { HttpClientModule } from '@angular/common/http'; 
 
@@ -56,7 +55,7 @@ const routes: Routes = [
       routes
     )
   ],
-  providers: [GetUsersService,ProjectService],
+  providers: [ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

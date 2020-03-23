@@ -1,0 +1,6 @@
+@import "../../globalCSS.scss";
+a{
+	  text-decoration : underline;
+      font-size: calc($default-font-size + 0.5vw);
+      color : $5cb85c
+}

@@ -1,0 +1,17 @@
+
+
+<div class="navBar">	
+	<div *ngFor="let link of links;let i=index">
+			<app-nav-unit [linkName]='link.linkDisplayName' [link]='link.link' [id]='i'></app-nav-unit>
+	</div>
+</div>
+
+
+
+
+<!-- 
+<button (mouseover)="mouseEnter($event,navigationStyle)">
+ Increment (when mouse is over)
+</button>
+count: {{count}} 
+-->

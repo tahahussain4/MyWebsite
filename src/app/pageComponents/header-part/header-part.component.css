@@ -1,0 +1,10 @@
+
+.globalHeadings{
+	font-family: 'Poiret One', cursive;
+/*	color:  #937842;*/
+	font-size: calc(30px + 5vw	);
+	text-align : center;
+	z-index : -1;
+	/*background-color: #efefd7;*/
+	
+}

@@ -1,0 +1,22 @@
+<div class="row socialMediaBar socialMediaSpan">
+	
+	<div class="col-md-12 col-sm-12 col-xs-12 " class = "socialMediaIconContainer">
+		<span *ngFor="let social of socialList" class = "socialMediaSpan">
+			<a href={{social.href}} target="_blank">
+				<img class="socialMediaIcon" src={{social.imgSrc}} alt={{social.alt}}/> 
+			</a>
+		</span>
+	</div>
+
+	<div class="col-md-12 col-sm-12 col-xs-12 contactinfo">
+		<div class="row" class="socialMediaIconContainer">
+			<div class="col-sm-4 "></div>
+			<div class="col-md-10 col-sm-12 col-xs-12" class="socialMediaSpan">
+				<p>Contact Me At</p>
+				<p>(289)-880-1883</p>
+				<p><a href="mailto:tahahussain1994@gmail.com">tahahussain.professional@gmail.com</a></p>
+			</div>
+			
+		</div>
+	</div>
+</div>

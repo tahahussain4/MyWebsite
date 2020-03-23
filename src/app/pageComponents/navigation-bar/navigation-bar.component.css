@@ -1,0 +1,21 @@
+html{	
+	height :100%;
+}
+
+body{
+	height:100%;
+}
+
+.navBar{
+	background-color: #efefd7;
+	/*z-index: 1;*/
+	/*position : absolute;	*/
+	bottom :0px;
+	top:0px;
+	height : 100%;
+	width : 100%;
+	/*margin-top : 5vh;*/
+	/*width : 13vw;*/
+
+}
+

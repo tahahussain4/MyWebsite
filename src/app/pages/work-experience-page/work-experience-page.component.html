@@ -1,0 +1,52 @@
+<app-header-part [heading] = 'heading' ></app-header-part>
+
+<div *ngFor = "let work of workExperiences">
+	<div class = "row workBox ">
+			<!-- Heading and work addresds -->
+			<div class= "col-md-4 col-sm-4">
+				<div class="row">
+					<div class="col-md-10 col-sm-10 headingColumn">
+						<div style="font-size: calc(10px + 1vw);font-weight: bold">
+							<div class="row" >
+								<div class="col-md-5 col-sm-5 col-xs-5">
+									{{work.workName}}
+								</div>
+								<div class="col-md-7 col-sm-7 col-xs-7" style="font-size: 15px">
+									<div class="row">
+										{{work.yearFrom}} to
+									</div>
+									<div class="row">
+										{{work.yearTo}}
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="font-style: italic;font-size:calc(10px + 1vw);"> {{work.role}}</div>
+						<div style="font-weight: bold">{{work.workAddress.street}}</div>
+						<div style="font-weight: bold">{{work.workAddress.city}},{{work.workAddress.province}},{{work.workAddress.country}}</div>
+						<div style="font-weight: bold">{{work.workAddress.poBox}}</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Descirption -->
+			<div [innerHTML]="work.workDescription" class= "col-md-4 col-sm-4">
+				
+			</div>
+
+			<!-- Skills -->
+			<div class= "col-md-4 col-sm-4">
+				<div class="row">
+					<div class="col-md-11 col-sm-11 col-xs-11 ovular" style="background-color: #63605F; color: white; font-weight: bold;	">
+						Skills
+					</div>
+				</div>
+				<div class="row">
+					<div *ngFor = 'let skill of work.skillsDeveloped' class="ovular">
+							{{skill}}
+					</div>
+				</div>
+			</div>
+	</div>
+	<hr>
+</div>
