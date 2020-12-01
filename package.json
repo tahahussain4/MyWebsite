@@ -9,8 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod && angular-cli-ghpages --branch master",
-   
+    "deploy": "ng build --prod && angular-cli-ghpages --branch master"
   },
   "private": true,
   "dependencies": {
@@ -38,7 +37,6 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.13.0",
     "@angular/compiler-cli": "^7.2.16",
     "@angular/language-service": "^7.2.16",
     "@types/jasmine": "^2.8.17",
